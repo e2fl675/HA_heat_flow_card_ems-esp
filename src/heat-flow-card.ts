@@ -357,11 +357,11 @@ export class HeatFlowCard extends LitElement {
                                 </svg>
 
                                 <a href="#" @click=${this._handleFloorLoadClick}>
-                                    <text id="heating_daily_power" x="430" y="80" class="st10 right-align">
+                                    <text id="heating_daily_power" x="400" y="80" class="st10 left-align">
                                         ${this.hass.states[this.config.heatingFloorDailyLoad].state}
                                          kWh
                                     </text>
-                                    <text x="448" y="63" class="st3 right-align"> DAILY ENERGY</text>
+                                    <text x="400" y="63" class="st3 left-align"> DAILY ENERGY</text>
                                 </a>
 
                                 <a href="#" @click=${this._handleMixerLvlClick}>
