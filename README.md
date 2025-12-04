@@ -5,6 +5,10 @@ Here's what it looks like:
 
 ## Installation
 
+This card uses entities provided by EMS-ESP https://emsesp.org/
+
+GIT https://github.com/emsesp
+
 * Copy the file dist/heat-flow-card to config/www/heat-flow-card/
 * Go to Settings->Dashboards->Resources and add "/local/heat-flow-card/heat-flow-card.js" with type "JavaScript Module"
 * Go back to a dashboard and add the "Custom: HeatFlow Card" card
