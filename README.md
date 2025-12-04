@@ -1,5 +1,7 @@
 # Home Assistant Lovelace Card for the "heat flow" service
 
+Inspired by [sunsync-power-flow-card](https://slipx06.github.io/sunsynk-power-flow-card/index.html)
+
 Here's what it looks like:
 
 ![Image](card_pic.png)
@@ -12,9 +14,10 @@ Here's what it looks like:
 
 Default configuration:
 
-This card uses entities provided by EMS-ESP https://emsesp.org/
+This card uses entities provided by [EMS-ESP](https://emsesp.org/)
 
-GIT https://github.com/emsesp
+[EMS-ESP github](https://github.com/emsesp)
+
 ```yaml
 type: 'custom:heat-flow-card'
 heatingActive: binary_sensor.boiler_heating_active
