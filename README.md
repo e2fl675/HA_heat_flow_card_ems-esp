@@ -5,16 +5,15 @@ Here's what it looks like:
 
 ## Installation
 
-This card uses entities provided by EMS-ESP https://emsesp.org/
-
-GIT https://github.com/emsesp
-
 * Copy the file dist/heat-flow-card to config/www/heat-flow-card/
 * Go to Settings->Dashboards->Resources and add "/local/heat-flow-card/heat-flow-card.js" with type "JavaScript Module"
 * Go back to a dashboard and add the "Custom: HeatFlow Card" card
 
 Default configuration:
 
+This card uses entities provided by EMS-ESP https://emsesp.org/
+
+GIT https://github.com/emsesp
 ```yaml
 type: 'custom:heat-flow-card'
 heatingActive: binary_sensor.boiler_heating_active
@@ -32,4 +31,5 @@ mixerValveLvl: sensor.mixer_hc1_mixing_valve_actuator_vc1
 
 ```
 
+For Devs:
 install yarn, then run yarn install to install dependencies and yarn build to regenerate the JS file in the dist directory.
