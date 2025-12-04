@@ -79,7 +79,7 @@ const i$2=(i,e)=>"method"===e.kind&&e.descriptor&&!("value"in e.descriptor)?{...
 
 var t$3,r$3;!function(e){e.language="language",e.system="system",e.comma_decimal="comma_decimal",e.decimal_comma="decimal_comma",e.space_comma="space_comma",e.none="none";}(t$3||(t$3={})),function(e){e.language="language",e.system="system",e.am_pm="12",e.twenty_four="24";}(r$3||(r$3={}));var ne=function(e,t,r,n){n=n||{},r=null==r?{}:r;var i=new Event(t,{bubbles:void 0===n.bubbles||n.bubbles,cancelable:Boolean(n.cancelable),composed:void 0===n.composed||n.composed});return i.detail=r,e.dispatchEvent(i),i};
 
-const CARD_VERSION = '1.0.2';
+const CARD_VERSION = '1.3.1';
 
 function hasChanged(element, changedProps) {
     // Force update after any config change
@@ -189,9 +189,9 @@ let HeatFlowCard = class HeatFlowCard extends s$3 {
                 <div class="content">
                     <div>
                         <svg preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
-                             viewBox="-2 0 490 408" height="429" width="516">
+                             viewBox="-2 0 490 408" height="100%" width="100%">
 
-                            <svg class="boiler-flow" style="overflow: visible" x="0%">
+                            <svg class="boiler-flow" style="overflow: visible" >
 
                                 <svg x="30" y="242" width="175" height="140" viewBox="0 0 160 30"
                                      preserveAspectRatio="xMidYMid meet">
@@ -247,7 +247,7 @@ let HeatFlowCard = class HeatFlowCard extends s$3 {
                                         ${this.hass.states[this.config.boilerDailyLoad].state}
                                          kWh
                                     </text>
-                                    <text x="205" y="380" class="st3 left-align"> DAILY LOAD</text>
+                                    <text x="205" y="380" class="st3 left-align"> DAILY ENERGY</text>
                                 </a>
 
                                 <a href="#" @click=${this._handleBoilerWaterTempClick}>
@@ -399,11 +399,11 @@ let HeatFlowCard = class HeatFlowCard extends s$3 {
                                 </svg>
 
                                 <a href="#" @click=${this._handleFloorLoadClick}>
-                                    <text id="heating_daily_power" x="440" y="80" class="st10 right-align">
+                                    <text id="heating_daily_power" x="430" y="80" class="st10 right-align">
                                         ${this.hass.states[this.config.heatingFloorDailyLoad].state}
                                          kWh
                                     </text>
-                                    <text x="448" y="63" class="st3 right-align"> DAILY LOAD</text>
+                                    <text x="448" y="63" class="st3 right-align"> DAILY ENERGY</text>
                                 </a>
 
                                 <a href="#" @click=${this._handleMixerLvlClick}>
@@ -453,7 +453,7 @@ let HeatFlowCard = class HeatFlowCard extends s$3 {
                                         ${this.hass.states[this.config.gasHeaterDailyLoad].state}
                                         kWh
                                     </text>
-                                    <text x="75" y="205" class="st3 left-align"> DAILY LOAD</text>
+                                    <text x="75" y="205" class="st3 left-align"> DAILY ENERGY</text>
                                 </a>
                                 
                                 <a href="#" @click=${this._handleBurnerPowerClick}>
