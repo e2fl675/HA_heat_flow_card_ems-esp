@@ -2,6 +2,7 @@
 
 Here's what it looks like:
 
+![Image](card_pic.png)
 
 ## Installation
 
